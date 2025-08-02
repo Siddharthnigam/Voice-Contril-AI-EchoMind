@@ -1,0 +1,47 @@
+------------------------------------HOW TO USE --------------------------------------------------------------
+- Say “Hello”:
+This activates EchoMind. He will reply with “Yes” and prompt you for a command.
+- Supported Voice Commands:
+- Open Websites:
+Say things like “open Google”, “open Facebook”, or “open YouTube”.
+- Play Music:
+Say “play [song name]”. Make sure the song exists in your musicLibrary.
+- Get News Updates:
+Say “news” — reads headlines from the News API.
+- Chatbot Mode:
+Say “activate” to enter chatbot mode using Gemini API. Say “exit” to leave.
+🛠 Notes- The app uses speech-to-text, text-to-speech, and basic web automation.
+- All verbal responses are spoken using pyttsx3.
+- Errors and timeouts are handled gracefully via printed messages or spoken alerts.
+
+
+
+
+-------------------------------------- Overview----------------------------------------------------------------------
+ This Python script builds a voice-controlled personal assistant called Jarvis. It leverages speech recognition, web browsing, news fetching, music control, and AI-powered chat capabilities.🔧 Main Componentsspeak(text)- Uses pyttsx3 to vocalize text.
+proceedCommand(command)- Parses incoming voice commands and responds accordingly.
+- Supports:
+- Website opening (webbrowser.open)
+- Music lookup from musicLibrary
+- Fetching news via NewsAPI
+- Launching chatbot mode
+
+chatbot_mode()- Activates Gemini-based conversational AI.
+
+- Listens to user questions, sends them to Gemini, and reads responses aloud.
+- Maintains conversation history for context.
+
+🎤 Main Execution LoopInside the if __name__ == "__main__": block:- Starts the voice assistant.
+
+- Listens for “hello” to trigger assistant mode.
+- Accepts follow-up commands and handles them via proceedCommand().
+
+🔗 External Integrations| Feature | Library Used | Purpose | 
+
+| Speech Input | speech_recognition | Captures voice as text | 
+| Voice Output | pyttsx3 | Converts text to speech | 
+| Browsing | webbrowser | Opens websites | 
+| Music | musicLibrary | Plays user-defined links | 
+| News Fetching | requests + NewsAPI | Reads out top headlines | 
+| Chatbot | Gemini API | Conversational Q&A | 
+
