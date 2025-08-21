@@ -1,4 +1,4 @@
-# Voice-Contril-AI-EchoMind
+# Voice-Control-AI-EchoMind
 **EchoMind** is a Python-based voice assistant designed to listen, respond, and act on your spoken commands. Whether it's launching websites, playing your favorite songs, fetching the latest news, or engaging in rich conversations powered by Google's Gemini API — EchoMind gives your desktop a voice.
 
 ---
